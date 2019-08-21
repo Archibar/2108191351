@@ -59,7 +59,7 @@
                                 </div>
                             @endif
 
-                            <form action="/" method="POST">
+                            <form action="{{route('address.store')}}" method="POST">
                                 @csrf
                                 <div class="field">
                                     <label>Name *</label>
@@ -116,7 +116,7 @@
                                         <small>{{$address->additional_info}}</small>
                                     @endif
                                     <div class="actbox">
-                                        <a href="#" class="bcross"></a>
+                                        <a href="#" class="bcross delete-address" data-id="{{$address->id}}" data-token="{{ csrf_token() }}"></a>
                                     </div>
                                 </div>
                                 @endforeach
@@ -128,7 +128,7 @@
             </div>
         </div>
     </div>
-    <script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_API_KEY') }}&libraries=places&callback=initialize" async defer></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key={{ env('GOOGLE_MAPS_API_KEY') }}&libraries=places&callback=initialize" defer></script>
     <script src="/js/mapInput.js"></script>
 @endsection
 

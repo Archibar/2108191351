@@ -12,4 +12,5 @@
 */
 
 Route::get('/', 'AddressController@index');
-Route::post('/', 'AddressController@store');
+Route::post('address', 'AddressController@store')->name('address.store');
+Route::delete('address/{id}', 'AddressController@destroy')->name('address.destroy');
