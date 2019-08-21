@@ -7,8 +7,11 @@
     <meta name="csrf-token" content="{{ csrf_token() }}">
 
     <title>address ::: user office ::: foodclub</title>
+    <script src="{{ asset('js/app.js') }}" defer></script>
+    <script src="{{ asset('js/jquery-ui.min.js') }}" defer></script>
     <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,700,700italic,400italic&subset=latin,latin-ext' rel='stylesheet' type='text/css'>
     <link href="{{ asset('css/app.css') }}" rel="stylesheet" type="text/css" />
+    <link href="{{ asset('css/jquery-ui.min.css') }}" rel="stylesheet" type="text/css" />
 
 </head>
 

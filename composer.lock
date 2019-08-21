@@ -4,7 +4,7 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "94d4bf9ac7f4a933030e46a346ee2917",
+    "content-hash": "63cb6bee4df50406618675030afab22a",
     "packages": [
         {
             "name": "dnoegel/php-xdg-base-dir",
@@ -377,6 +377,59 @@
                 "trusted proxy"
             ],
             "time": "2019-07-29T16:49:45+00:00"
+        },
+        {
+            "name": "igaster/laravel_cities",
+            "version": "v1.3.5",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/igaster/laravel_cities.git",
+                "reference": "a140f6f2a6dce67fe71c9916a78c7efd9edd1d3f"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/igaster/laravel_cities/zipball/a140f6f2a6dce67fe71c9916a78c7efd9edd1d3f",
+                "reference": "a140f6f2a6dce67fe71c9916a78c7efd9edd1d3f",
+                "shasum": ""
+            },
+            "require": {
+                "illuminate/contracts": "~5.1"
+            },
+            "require-dev": {
+                "monolog/monolog": "^1.22",
+                "orchestra/testbench": "~3.4",
+                "phpunit/phpunit": "^6.0",
+                "symfony/console": "^3.2",
+                "symfony/var-dumper": "^3.2",
+                "vlucas/phpdotenv": "^2.4"
+            },
+            "type": "library",
+            "autoload": {
+                "psr-4": {
+                    "Igaster\\LaravelCities\\": "src/",
+                    "Igaster\\LaravelCities\\Tests\\": "tests/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Giannis Gasteratos",
+                    "email": "igasteratos@gmail.com"
+                }
+            ],
+            "description": "Seed all countries/cities from geonames.org database. Searchable DB tree, ready to use API & a bonus vue.js component!",
+            "homepage": "https://github.com/igaster/laravel_cities.git",
+            "keywords": [
+                "GeoNames.org",
+                "cities",
+                "countries",
+                "geolocation",
+                "laravel"
+            ],
+            "time": "2019-03-03T10:48:58+00:00"
         },
         {
             "name": "jakub-onderka/php-console-color",

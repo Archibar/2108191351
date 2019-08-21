@@ -11,6 +11,5 @@
 |
 */
 
-Route::get('/', function () {
-    return view('home');
-});
+Route::get('/', 'AddressController@index');
+Route::post('/', 'AddressController@store');

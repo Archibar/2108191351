@@ -166,6 +166,8 @@ return [
          * Package Service Providers...
          */
 
+        Igaster\LaravelCities\GeoServiceProvider::class,
+
         /*
          * Application Service Providers...
          */
